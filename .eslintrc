@@ -1,0 +1,19 @@
+{
+	"extends": [
+		"eslint:recommended"
+	],
+	"globals": {
+		"$": true,
+		"jQuery": true,
+		"GhostContentAPI": true,
+		"GhostSearch": true,
+		"Cookies": true,
+		"moment": true,
+		"hljs": true,
+		"Swiper": true
+	},
+	"env": {
+		"browser": true,
+		"es6": true
+	}
+}

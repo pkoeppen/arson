@@ -5,7 +5,9 @@
   "description": "My personal blog.",
   "main": "index.js",
   "scripts": {
+    "deploy": "echo \"TODO: Deploy to EC2.\" && exit 0",
     "dev": "./node_modules/.bin/gulp",
+    "lint": "./node_modules/.bin/gulp js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,10 +19,13 @@
   "bugs": {
     "url": "https://github.com/pkoeppen/blog/issues"
   },
-  "homepage": "https://github.com/pkoeppen/blog#readme",
+  "homepage": "https://arson.lol",
   "devDependencies": {
     "browser-sync": "^2.26.5",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2"
-  }
+    "gulp-eslint": "^5.0.0",
+    "gulp-sass": "^4.0.2",
+    "prettier": "^1.17.0"
+  },
+  "dependencies": {}
 }
