@@ -1,0 +1,30 @@
+{
+    "name": "arson",
+    "description": "A custom theme.",
+    "version": "1.0.0",
+    "license": "UNLICENSED",
+    "engines": {
+        "ghost": ">=2.0.0",
+        "ghost-api": "v2"
+    },
+    "author": {
+        "name": "Peter Koeppen",
+        "email": "peter@arson.lol",
+        "url": "https://arson.lol"
+    },
+    "config": {
+        "posts_per_page": 1,
+        "image_sizes": {
+            "xs": {
+                "width": 80,
+                "height": 80
+            },
+            "m": {
+                "width": 540
+            },
+            "l": {
+                "width": 1140
+            }
+        }
+    }
+}

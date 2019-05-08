@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  ghost:
+    container_name: ghost_blog
+    image: ghost:2-alpine
+    ports:
+      - "2368:2368"
+    volumes:
+      - ./content:/var/lib/ghost/content
+volumes:
+    content:

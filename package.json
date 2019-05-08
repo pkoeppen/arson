@@ -1,0 +1,26 @@
+{
+  "name": "arson.lol",
+  "version": "1.0.0",
+  "private": true,
+  "description": "My personal blog.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkoeppen/blog.git"
+  },
+  "author": "Peter Koeppen",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/pkoeppen/blog/issues"
+  },
+  "homepage": "https://github.com/pkoeppen/blog#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
