@@ -13,18 +13,19 @@ const DOCKER_RESTART_INTERVAL = 2000;
 const docker = {
   up() {
     // Spin up containers defined in docker-compose.yml.
-    return new Promise((resolve, reject) => {
-      exec('docker-compose up -d', error => {
+    return new Promise(resolve => {
+      exec('docker-compose up -d', (error, stdout) => {
         if (error) {
           return reject(error);
         }
+	console.log('docker says:', stdout);
         setTimeout(() => resolve(), DOCKER_START_INTERVAL);
       });
     });
   },
   restart() {
     // Restart the Ghost container.
-    return new Promise((resolve, reject) => {
+    return new Promise(resolve => {
       exec('docker restart ghost_blog', error => {
         if (error) {
           return reject(error);
